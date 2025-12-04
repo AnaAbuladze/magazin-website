@@ -1,0 +1,29 @@
+.btn-primary {
+  padding: 8px 12px;
+  border-radius: 100px;
+  border: 1px solid $primary-color-black;
+  color: $primary-color-black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+ font-family: "GeneralSans-regular";
+ font-size: 12px;
+
+  &:hover {
+    background-color: $primary-color-black;
+    color: $primary-color-white;
+  }
+}
+
+.poster-btn{
+  padding:  14px 24px;
+  background-color: $primary-color-black;
+  color: white;
+  text-transform: uppercase;
+   font-family: "GeneralSans-regular";
+  transition: all 0.3s ease;
+  cursor: pointer;
+   &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+}

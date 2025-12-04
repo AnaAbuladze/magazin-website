@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'GeneralSans-Regular';
+  src: url('../font/GeneralSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Bold';
+  src: url('../font/GeneralSans-Bold.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Light';
+  src: url('../font/GeneralSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Medium';
+  src: url('../font/GeneralSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.largtext {
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+  color: $primary-color-black;
+  font-size: 276px;
+}
+
+.text-default {
+  color: $primary-color-black;
+  font-size: 22px;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+}
+
+.text-default1 {
+  color: $primary-color-black;
+  font-size: 16px;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+}
+
+.text-default2 {
+  color: $primary-color-black;
+  font-size: 24px;
+  font-family: "GeneralSans-bold";
+
+}
+
+.banner-text {
+  color: $primary-color-white;
+  font-size: 22px;
+  font-family: "GeneralSans-medium";
+  text-transform: uppercase;
+}
+
+.banner-secondary-text {
+  color: $primary-color-white;
+  font-size: 20px;
+  font-family: "GeneralSans-regular";
+}
+
+.text-medium {
+  color: $primary-color-black;
+  font-size: 22px;
+  font-family: "GeneralSans-regular";
+}
+
+.heading-larg-text {
+  color: $primary-color-black;
+  font-size: 104px;
+  line-height: 110%;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-pharagrap {
+  color: $primary-color-black;
+  font-size: 18px;
+  line-height: 180%;
+  font-family: "GeneralSans-regular";
+}
+
+.heading-pharagrap2 {
+  color: $primary-color-black;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: "GeneralSans-regular";
+}
+
+.card-article-headline {
+  color: $primary-color-black;
+  font-size: 32px;
+  font-family: "GeneralSans-bold";
+  line-height: 120%;
+  ;
+}
+
+.bold-48 {
+  color: $primary-color-black;
+  font-size: 48px;
+  font-family: "GeneralSans-bold";
+  line-height: 120%;
+}
+
+
+.detail-bold-text {
+  color: $primary-color-black;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: "GeneralSans-bold";
+}
+
+.detail-regular-text {
+  color: $primary-color-black;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: "GeneralSans-regular";
+}
+
+.poster-header {
+  color: $primary-color-white;
+  font-size: 88px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
+.poster-header1{
+    color: $primary-color-white;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
+
+
+.poster-subtitle {
+  color: $primary-color-white;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-medium";
+}
+.poster-subtitle1{
+  color: $primary-color-white;
+  font-size: 25px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}

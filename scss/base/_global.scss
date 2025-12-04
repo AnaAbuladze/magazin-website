@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
+
+  // @include responsive("xl") {
+  //   max-width: 1200px;  
+  // }
+
+  // @include responsive("l") {
+  //   max-width: 960px;
+
+  // }
+
+  // @include responsive("m") {
+  //   max-width: 720px;
+
+  // }
+
+  // @include responsive("s") {
+  //   max-width: 100%;
+
+  // }
+}
+
+.flex {
+  display: flex;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+a {
+  color: $primary-color-black;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/*animations*/
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
