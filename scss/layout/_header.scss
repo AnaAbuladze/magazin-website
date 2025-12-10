@@ -17,7 +17,7 @@ header{
 
   a {
     padding: 3px;                
-    border-radius: 50%;
+   
     transition:
       background-color 0.35s ease,
       color 0.35s ease,
@@ -25,8 +25,8 @@ header{
       opacity 0.3s ease;
 
     &:hover {
-      background-color: $primary-color-black;
-      color: $primary-color-white;
+     
+    
       transform: scale(1.03);   
       opacity: 0.9;            
     }

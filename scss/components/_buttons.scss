@@ -27,3 +27,33 @@
       background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
+.footer-btn{
+  padding:  14px 24px;
+  background-color: $primary-color-white;
+  color:  $primary-color-black;
+  text-transform: uppercase;
+   font-family: "GeneralSans-regular";
+  transition: all 0.3s ease;
+  cursor: pointer;
+   &:hover {     background-color: #9fa19b
+
+
+      
+  }
+}
+.next-page-btn{
+
+  position: absolute;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+right: 0;
+margin-right: 120px;
+  &:hover {
+    transform: translateX(3px);    
+  }
+}
+.listen-btn{
+  cursor: pointer;
+}

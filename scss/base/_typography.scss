@@ -31,6 +31,15 @@
   text-transform: uppercase;
   color: $primary-color-black;
   font-size: 276px;
+  text-align: center;
+}
+.headline-small{
+    font-family: "GeneralSans-medium";
+
+  color: $primary-color-black;
+  font-size: 72px;
+  line-height: 110%;
+
 }
 
 .text-default {
@@ -40,7 +49,7 @@
   text-transform: uppercase;
 }
 
-.text-default1 {
+.article-header {
   color: $primary-color-black;
   font-size: 16px;
   font-family: "GeneralSans-bold";
@@ -54,6 +63,13 @@
 
 }
 
+.text-default1{
+color: $primary-color-black;
+  font-size: 16px;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+   line-height: 100%;
+}
 .banner-text {
   color: $primary-color-white;
   font-size: 22px;
@@ -133,6 +149,13 @@
   text-transform: uppercase;
   font-family: "GeneralSans-bold";
 }
+.poster-header-30{
+   color: $primary-color-white;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
 .poster-header1{
     color: $primary-color-white;
   font-size: 50px;
@@ -156,3 +179,61 @@
   text-transform: uppercase;
   font-family: "GeneralSans-bold";
 }
+.poster-subtitle-15{
+   color: $primary-color-white;
+  font-size: 15px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-medium";
+}
+.detail-page-header{
+    color: $primary-color-black;
+  font-size: 32px;
+  font-family: "GeneralSans-bold";
+  line-height: 110%;
+    text-transform: uppercase;
+
+
+}
+.text-medium{
+    color: $primary-color-black;
+  font-size: 20px;
+  line-height: 180%;
+  font-family: "GeneralSans-medium";
+}
+.text-20-bold{
+    color: $primary-color-black;
+  font-size: 20px;
+  line-height: 180%;
+   font-family: "GeneralSans-bold";
+}
+.text-default-16-bold{
+    color: $primary-color-black;
+  font-size: 16px;
+  font-family: "GeneralSans-bold";
+  line-height: 180%;
+  
+}
+.text-default-16-regular{
+    color: $primary-color-black;
+  font-size: 16px;
+    font-family: "GeneralSans-regular";
+
+  line-height: 180%;
+
+}
+.text-queto {
+  color: $primary-color-black;
+  font-size: 94px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
+
+.article-headline{
+  color: $primary-color-black;
+  font-size: 100px;
+  line-height: 100%;
+  font-family: "GeneralSans-medium";
+}
+

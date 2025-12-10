@@ -163,7 +163,11 @@ transform: scale(1.05);
   bottom: 36px;
   left: 36px;
   gap:232px;
+  align-items: center;
 
+}
+.pod-subtitle{
+  gap:5px;
 }
 .podcast-detail{
 margin-top: 32px;
@@ -174,4 +178,38 @@ gap:48px;
 .podcast-list {
   display: flex;
   width: 100%;
+
+}
+
+/* authors card*/
+.author-list-cont{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.author-list-item{
+  width: 50%;
+  border: 1px solid $primary-color-black;
+  cursor: pointer;
+
+}
+.author-item{
+  padding: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap:48px;
+
+}
+.author-img{
+  width: 150px;
+     @include aspectRatio(150, 150);
+     img{
+      border-radius: 50%;
+     }
+}
+.author-text{
+  display: flex;
+  flex-direction: column;
+  gap:18px;
 }

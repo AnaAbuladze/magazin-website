@@ -1,0 +1,19 @@
+.author-container {
+    padding: 96px 0;
+}
+.author-item-cont{
+    border-bottom: 1px solid $primary-color-black;
+    padding: 48px 0;
+    transition: 0.3s
+}
+.author-info-cont{
+    gap:48px;
+}
+.podcaast-meta-info{
+    flex: 1;
+}
+.author-item-cont:hover {
+    background-color: #f5f5f5; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+border: none;}
