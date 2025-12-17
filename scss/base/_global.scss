@@ -3,24 +3,30 @@
   max-width: 1520px;
   margin: 0 auto;
 
-  // @include responsive("xl") {
-  //   max-width: 1200px;  
-  // }
+   @include responsive("xxl") {
+    max-width: 1300px;
+    padding: 0 5px;
+  }
 
-  // @include responsive("l") {
-  //   max-width: 960px;
+  @include responsive("xl") {
+    max-width: 1200px;
+    padding: 0 16px;
+  }
 
-  // }
+  @include responsive("lg") {
+    max-width: 960px;
+    padding: 0 12px;
+  }
 
-  // @include responsive("m") {
-  //   max-width: 720px;
+  @include responsive("md") {
+    max-width: 720px;
+    padding: 0 8px;
+  }
 
-  // }
-
-  // @include responsive("s") {
-  //   max-width: 100%;
-
-  // }
+  @include responsive("sm") {
+    max-width: 100%;
+    padding: 0 4px;
+  }
 }
 .container2{
   width: 100%;
@@ -70,4 +76,13 @@ a {
   100% {
     transform: translateX(-50%);
   }
+}
+body{
+  background-color: white;
+  color: black;
+}
+.body.dark-mode,
+body.dark-mode * {
+  color: white;
+  background-color: $primary-color-black;
 }

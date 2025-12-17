@@ -3,12 +3,18 @@
     display: flex;
     gap:48px;
     align-items: start;
-    padding-bottom: 48px;
-    padding-top: 48px;
+    padding-bottom: 96px;
+    padding-top: 56px;
     border-bottom: 1px solid $primary-color-black;
     &:last-child{
       border: none;
     }
+     @include responsive("lg") {
+gap:20px;
+  flex-direction: column;
+
+  }
+
 
 }
 
@@ -35,8 +41,25 @@
     display: flex;
     align-items: center;
 
-}
+  }
+.pod-det{
+  gap:16px;
+   @include responsive("xl") {
+ justify-content: space-between;
 
+  }
+  span{
+     @include responsive("xl") {
+ font-size: 20px;
+
+  }
+
+  }
+}
+.auth-det{
+  gap:32px;
+  
+}
 .meta-item {
     gap: 8px;
     display: flex;
@@ -46,7 +69,12 @@
     width: 240px;
     transition: transform 0.3s ease;
     @include aspectRatio(240, 240);
-      
+    @include responsive("lg") {
+ width: 80%;
+ margin: auto;
+    }
+
+
 }
   .card-img:hover{
 transform: scale(1.05);
@@ -59,9 +87,8 @@ transform: scale(1.05);
 }
 .poster-text{
     position: absolute;
-    top:0;
-    left:50%;
-    transform: translateX(-50%);
+    top:36px;
+    left: 36px;
     gap:8px;
     
 }
@@ -144,11 +171,10 @@ transform: scale(1.05);
 /*podcast card*/
 .list-item{
   padding: 48px;
-     width: 507px;
-     border: 1px solid $primary-color-black;
- 
-
+  
 }
+
+
 .img-cont{
  
   position: relative;
@@ -159,13 +185,10 @@ transform: scale(1.05);
   gap:5px;
 }
 .pod-cont {
-  width: 100%;
-  bottom: 36px;
-  left: 36px;
-  gap:232px;
-  align-items: center;
-
-}
+    width: 100%;
+    bottom: 0px;
+    justify-content: space-between;
+    align-items: center;}
 .pod-subtitle{
   gap:5px;
 }
@@ -174,12 +197,41 @@ margin-top: 32px;
   display: flex;
   flex-direction: column;
 gap:48px;
+h2{
+  @include multilineElipsis(3);
+      line-height: 1.1
 }
+  @include responsive("md") {
+font-size: 25px;
+}}
 .podcast-list {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  @include responsive("xl") {
+gap:20px;
+  }
+  a{
+    width: 33.33%;
+        border: 1px solid $primary-color-black;
+     border-right: none;
+      @include responsive("xl") {
+ width: 100%;
+  border-right: 1px solid $primary-color-black;
+  }
+
+       &:last-child {
+      border-right: 1px solid $primary-color-black;
+    }
+   
+  }
+}
+.podcast-img{
+  width: 100%;
+        @include aspectRatio(407, 407)
 
 }
+
 
 /* authors card*/
 .author-list-cont{
@@ -187,12 +239,27 @@ gap:48px;
   flex-wrap: wrap;
   width: 100%;
 }
-.author-list-item{
+.author-list-item {
   width: 50%;
   border: 1px solid $primary-color-black;
   cursor: pointer;
+     @include responsive("xl") {
+ width: 100%;
+  border-right: 1px solid $primary-color-black;
+  }
 
+  &:nth-child(odd) {
+    border-right: none;
+    @include responsive("xl") {
+
+  border-right: 1px solid $primary-color-black;
+  }
+  }
+   &:not(:nth-last-child(-n + 2)) {
+    border-bottom: none;
+  }
 }
+
 .author-item{
   padding: 32px;
   width: 100%;
@@ -211,5 +278,17 @@ gap:48px;
 .author-text{
   display: flex;
   flex-direction: column;
-  gap:18px;
+  gap:16px;
+    @include responsive("xl") {
+flex-direction: row;
+justify-content: space-between;
+width: 80%;
+
+  
+  }
+    @include responsive("md") {
+flex-direction: column;
+
+  
+  }
 }

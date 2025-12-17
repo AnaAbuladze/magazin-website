@@ -6,15 +6,16 @@
 // -----------------------------
 // Spacing setup
 // -----------------------------
-$spaces: 0, 4px, 8px, 12px, 16px, 20px, 24px, 28px,32px, 48px, 64px,84px, 96px,192px;
+$spaces: 0, 4px, 8px, 12px,14px,  16px, 20px, 24px, 28px, 32px,36px,35px, 48px,56px, 64px, 84px,87px, 96px, 192px;
 
 $space-map: ();
 
 @for $i from 1 through list.length($spaces) {
   $value: list.nth($spaces, $i);
   $num: if(meta.type-of($value) == "number" and math.unit($value) == "px",
-           math.div($value, 1px),
-           $value);
+    math.div($value, 1px),
+    $value
+  );
   $space-map: map.merge($space-map, ($num: $value));
 }
 
@@ -32,8 +33,9 @@ $directions: (
 $breakpoints: (
   sm: 576px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px
+  lg: 1040px,
+  xl: 1200px,
+  xxl:1500px
 );
 
 // Mapping m→margin, p→padding
@@ -48,7 +50,6 @@ $type-map: (
 @mixin space-classes($short-type) {
   $real-type: map.get($type-map, $short-type);
 
-  // Default spacing classes
   @each $key, $value in $space-map {
     @each $dir-short, $props in $directions {
       .#{$short-type}-#{$dir-short}-#{$key} {
@@ -59,7 +60,6 @@ $type-map: (
     }
   }
 
-  // Responsive spacing classes
   @each $bp, $width in $breakpoints {
     @media (min-width: $width) {
       @each $key, $value in $space-map {
@@ -106,7 +106,7 @@ $type-map: (
 }
 
 // -----------------------------
-// Multiline ellipsis
+// Multiline Ellipsis
 // -----------------------------
 @mixin multilineElipsis($count) {
   overflow: hidden;
@@ -114,3 +114,23 @@ $type-map: (
   -webkit-line-clamp: $count;
   -webkit-box-orient: vertical;
 }
+
+// -----------------------------
+// Responsive Mixin (ADDED!)
+// -----------------------------
+@mixin responsive($size) {
+  @if $size == "sm" {
+    @media (max-width: map.get($breakpoints, sm)) { @content; }
+  } @else if $size == "md" {
+    @media (max-width: map.get($breakpoints, md)) { @content; }
+  } @else if $size == "lg" {
+    @media (max-width: map.get($breakpoints, lg)) { @content; }
+  } @else if $size == "xl" {
+    @media (max-width: map.get($breakpoints, xl)) { @content; }
+  } @else if $size == "xxl" {
+    @media (max-width: map.get($breakpoints, xxl)) { @content; }
+  } @else {
+    @error "Unknown breakpoint: `#{$size}`";
+  }
+}
+

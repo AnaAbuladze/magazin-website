@@ -4,6 +4,10 @@ header{
 .nav-bar {
   gap: 24px;
 
+@include responsive("lg") {
+
+  gap:15px;
+}
   li:hover,
   a:hover {
     color: rgba(0, 0, 0, 0.5);
@@ -14,21 +18,22 @@ header{
 .social-icons {
   font-size: 18px;
   gap: 12px;
-
   a {
-    padding: 3px;                
-   
-    transition:
-      background-color 0.35s ease,
-      color 0.35s ease,
-      transform 0.25s ease,
-      opacity 0.3s ease;
-
+    padding: 3px;                  
+    transition:0.3s;
     &:hover {
-     
-    
       transform: scale(1.03);   
       opacity: 0.9;            
     }
+  }
+}
+.header-bar{
+
+
+
+  @include responsive("md") {
+flex-direction: column;
+gap: 12px;
+
   }
 }

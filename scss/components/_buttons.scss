@@ -6,8 +6,8 @@
   transition: all 0.3s ease;
   cursor: pointer;
   text-transform: uppercase;
- font-family: "GeneralSans-regular";
- font-size: 12px;
+  font-family: "GeneralSans-regular";
+  font-size: 12px;
 
   &:hover {
     background-color: $primary-color-black;
@@ -15,45 +15,47 @@
   }
 }
 
-.poster-btn{
-  padding:  14px 24px;
+.poster-btn {
+  padding: 14px 24px;
   background-color: $primary-color-black;
   color: white;
   text-transform: uppercase;
-   font-family: "GeneralSans-regular";
+  font-family: "GeneralSans-regular";
   transition: all 0.3s ease;
   cursor: pointer;
-   &:hover {
-      background-color: rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
-.footer-btn{
-  padding:  14px 24px;
+.footer-btn {
+  padding: 14px 24px;
   background-color: $primary-color-white;
-  color:  $primary-color-black;
+  color: $primary-color-black;
   text-transform: uppercase;
-   font-family: "GeneralSans-regular";
+  font-family: "GeneralSans-regular";
   transition: all 0.3s ease;
   cursor: pointer;
-   &:hover {     background-color: #9fa19b
 
-
-      
+  &:hover {
+    background-color: #9fa19b
   }
 }
-.next-page-btn{
 
-  position: absolute;
-  align-items: center;
+.next-page-btn {
+
+  display: flex;
+  justify-content: end;
   gap: 12px;
   transition: all 0.3s ease;
-right: 0;
-margin-right: 120px;
+  right: 0;
+
   &:hover {
-    transform: translateX(3px);    
+    transform: translateX(3px);
   }
 }
-.listen-btn{
+
+.listen-btn {
   cursor: pointer;
 }

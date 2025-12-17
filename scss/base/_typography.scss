@@ -31,14 +31,35 @@
   text-transform: uppercase;
   color: $primary-color-black;
   font-size: 276px;
+  line-height: 1;
   text-align: center;
-}
+
+  @include responsive("xxl") {
+    font-size: 211px;
+  }
+   @include responsive("xl") {
+        font-size: 169px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+    @include responsive("lg") {
+        font-size: 130px;
+        
+    }
+      @include responsive("md") {
+        font-size: 100px
+        
+    }
+  }
+
+
+
 .headline-small{
     font-family: "GeneralSans-medium";
-
   color: $primary-color-black;
   font-size: 72px;
   line-height: 110%;
+  @include multilineElipsis(1);
 
 }
 
@@ -90,19 +111,29 @@ color: $primary-color-black;
 }
 
 .heading-larg-text {
+  width: 70%;
   color: $primary-color-black;
   font-size: 104px;
   line-height: 110%;
   font-family: "GeneralSans-bold";
   text-transform: uppercase;
   letter-spacing: 1px;
+   @include multilineElipsis(2);
+   @include responsive("xxl") {
+    font-size: 82px;
+  }
+  @include responsive("md") {
+    font-size: 40px;
+  }
 }
+
 
 .heading-pharagrap {
   color: $primary-color-black;
   font-size: 18px;
   line-height: 180%;
   font-family: "GeneralSans-regular";
+   @include multilineElipsis(7);
 }
 
 .heading-pharagrap2 {
@@ -110,6 +141,7 @@ color: $primary-color-black;
   font-size: 16px;
   line-height: 180%;
   font-family: "GeneralSans-regular";
+     @include multilineElipsis(4);
 }
 
 .card-article-headline {
@@ -117,7 +149,7 @@ color: $primary-color-black;
   font-size: 32px;
   font-family: "GeneralSans-bold";
   line-height: 120%;
-  ;
+  @include multilineElipsis(2);
 }
 
 .bold-48 {
@@ -148,6 +180,9 @@ color: $primary-color-black;
   line-height: 100%;
   text-transform: uppercase;
   font-family: "GeneralSans-bold";
+   @include responsive("xxl") {
+font-size: 42px;
+  }
 }
 .poster-header-30{
    color: $primary-color-white;
@@ -235,5 +270,6 @@ color: $primary-color-black;
   font-size: 100px;
   line-height: 100%;
   font-family: "GeneralSans-medium";
+   @include multilineElipsis(3);
 }
 
