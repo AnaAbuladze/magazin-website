@@ -41,7 +41,11 @@
   &:hover {
     background-color: #9fa19b
   }
+   @include responsive("sm") {
+   padding: 7px;
+  }
 }
+
 
 .next-page-btn {
 
