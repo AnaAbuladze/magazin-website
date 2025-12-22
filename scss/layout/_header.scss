@@ -37,3 +37,63 @@ gap: 12px;
 
   }
 }
+.header-co{
+   @include responsive("md") {
+display: none;
+
+  }
+}
+.sec-header{
+  display: none;
+     @include responsive("md") {
+display: block;
+  }
+}
+.fa-bars{
+  font-size: 20px;
+ 
+}
+  .fa-xmark{
+    color: $primary-color-white;
+  }
+    .mobile-menu-box {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 80px 20px 20px 20px;
+        z-index: 1001;
+        color: white;
+       background-color: $primary-color-black;
+        
+    }
+    
+    .mobile-menu-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        padding: 10px;
+    }
+    .mobile-menu-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        nav ul{
+          gap: 25px;
+        }
+
+    }
+.mobile-menu-box a {
+  font-size: 30px;
+  gap: 40px;
+    color: white;
+    text-decoration: none;
+    &:hover{
+      text-shadow: $primary-color-white 1px ;
+color: $secondary-color-yellow; }
+}
+
