@@ -234,5 +234,11 @@ margin-top: 35px;
   padding-bottom: 192px;
 }
 .pocast-header{
-    justify-content: space-between;
+ @include responsive("sm") {
+  flex-direction: column;
+  gap: 10px;
+  }
+
+  
+
 }
