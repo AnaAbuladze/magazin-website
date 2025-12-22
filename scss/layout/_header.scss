@@ -56,18 +56,26 @@ display: block;
   .fa-xmark{
     color: $primary-color-white;
   }
-    .mobile-menu-box {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        padding: 80px 20px 20px 20px;
-        z-index: 1001;
-        color: white;
-       background-color: $primary-color-black;
-        
-    }
+   .mobile-menu-box {
+    position: fixed;
+    inset: 0;
+    padding: 80px 20px 20px;
+    z-index: 1001;
+    background-color: $primary-color-black;
+    color: white;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu-box.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
     
     .mobile-menu-close {
         position: absolute;
