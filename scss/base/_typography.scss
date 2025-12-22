@@ -25,7 +25,6 @@
   font-style: normal;
 }
 
-
 .largtext {
   font-family: "GeneralSans-bold";
   text-transform: uppercase;
@@ -50,9 +49,11 @@
         font-size: 100px
         
     }
+    @include responsive("sm") {
+        font-size: 54px
+        
+    }
   }
-
-
 
 .headline-small{
     font-family: "GeneralSans-medium";
@@ -122,12 +123,11 @@ color: $primary-color-black;
    @include responsive("xxl") {
     font-size: 82px;
   }
+
   @include responsive("md") {
     font-size: 40px;
   }
 }
-
-
 .heading-pharagrap {
   color: $primary-color-black;
   font-size: 18px;
@@ -150,6 +150,10 @@ color: $primary-color-black;
   font-family: "GeneralSans-bold";
   line-height: 120%;
   @include multilineElipsis(2);
+   @include responsive("sm") {
+        font-size: 22px;
+        
+    }
 }
 
 .bold-48 {
