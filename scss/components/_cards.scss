@@ -14,7 +14,6 @@
   @include responsive("lg") {
     gap: 20px;
     flex-direction: column;
-
   }
 }
 
@@ -30,7 +29,6 @@
   flex: 1;
   gap: 71px;
   height: 100%;
-
 }
 
 .card-details {
@@ -43,16 +41,12 @@
   gap: 24px;
   display: flex;
   align-items: center;
-   @include responsive("sm") {
-    
-      flex-direction: column;
-align-items: baseline;
-  }
 
-  
-}
-.article-details{
-    
+  @include responsive("sm") {
+
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 
 .pod-det {
@@ -69,6 +63,9 @@ align-items: baseline;
 
     }
 
+    @include responsive("lg") {
+      font-size: 15px;
+    }
   }
 }
 
@@ -102,7 +99,6 @@ align-items: baseline;
 
 .poster-img {
   @include aspectRatio(369, 461)
-
 }
 
 .poster-cont {
@@ -114,7 +110,7 @@ align-items: baseline;
   top: 36px;
   left: 36px;
   gap: 8px;
-  
+
 
 }
 
@@ -211,8 +207,9 @@ align-items: baseline;
   top: 36px;
   left: 36px;
   gap: 5px;
+
   @include responsive("sm") {
-    top:11px;
+    top: 11px;
     left: 11px;
   }
 }
@@ -222,8 +219,9 @@ align-items: baseline;
   bottom: 0px;
   justify-content: space-between;
   align-items: center;
-   @include responsive("sm") {
-   padding: 11px;
+
+  @include responsive("sm") {
+    padding: 11px;
   }
 }
 
@@ -237,11 +235,11 @@ align-items: baseline;
   flex-direction: column;
   gap: 48px;
 }
-  .headline-2{
-    @include multilineElipsis(3);
-    line-height: 1.1
-    
-  }
+
+.headline-2 {
+  @include multilineElipsis(3);
+  line-height: 1.1
+}
 
 .podcast-list {
   display: flex;
@@ -265,7 +263,6 @@ align-items: baseline;
     &:last-child {
       border-right: 1px solid $primary-color-black;
     }
-
   }
 }
 
@@ -273,7 +270,6 @@ align-items: baseline;
   width: 100%;
   @include aspectRatio(407, 407)
 }
-
 
 /* authors card*/
 .author-list-cont {
@@ -312,11 +308,10 @@ align-items: baseline;
   display: flex;
   align-items: center;
   gap: 48px;
-   @include responsive("sm") {
-      flex-direction: column;
-        
-    }
 
+  @include responsive("sm") {
+    flex-direction: column;
+  }
 }
 
 .author-img {
@@ -337,14 +332,10 @@ align-items: baseline;
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
-
-
   }
 
-
-    @include responsive("md") {
+  @include responsive("md") {
     flex-direction: column;
-align-items: center;
-
+    align-items: center;
   }
 }
