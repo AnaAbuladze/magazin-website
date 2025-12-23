@@ -49,6 +49,7 @@ max-width: 800px;
     @include responsive("lg") {
 flex-direction: column-reverse;
   }
+  
 }
 .site-header-cont {
     width: 100%;
@@ -79,7 +80,9 @@ flex-direction: column-reverse;
   }
     p{
          @include multilineElipsis(4);
-
+  @include responsive("sm") {
+   @include multilineElipsis(9);
+  }
     }
 }
 
@@ -232,13 +235,4 @@ margin-top: 35px;
     gap:96px;
   border-top: 1px solid $primary-color-black;
   padding-bottom: 192px;
-}
-.pocast-header{
- @include responsive("sm") {
-  flex-direction: column;
-  gap: 10px;
-  }
-
-  
-
 }
