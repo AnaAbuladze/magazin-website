@@ -61,6 +61,11 @@
   font-size: 72px;
   line-height: 110%;
   @include multilineElipsis(1);
+    @include responsive("sm") {
+        font-size: 54px;
+          @include multilineElipsis(3);
+          text-align: center;
+    }
 
 }
 
@@ -69,8 +74,8 @@
   font-size: 22px;
   font-family: "GeneralSans-bold";
   text-transform: uppercase;
+   
 }
-
 .article-header {
   color: $primary-color-black;
   font-size: 16px;
@@ -91,6 +96,8 @@ color: $primary-color-black;
   font-family: "GeneralSans-bold";
   text-transform: uppercase;
    line-height: 100%;
+   
+    
 }
 .banner-text {
   color: $primary-color-white;
@@ -126,6 +133,7 @@ color: $primary-color-black;
 
   @include responsive("md") {
     font-size: 40px;
+    width: 100%;
   }
 }
 .heading-pharagrap {
@@ -275,5 +283,9 @@ font-size: 42px;
   line-height: 100%;
   font-family: "GeneralSans-medium";
    @include multilineElipsis(3);
+     @include responsive("sm") {
+        font-size: 42px;
+        
+    }
 }
 
