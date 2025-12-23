@@ -5108,6 +5108,10 @@ body.dark-mode * {
 @media (max-width: 576px) {
   .card-article-headline {
     font-size: 22px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -5242,6 +5246,10 @@ body.dark-mode * {
 @media (max-width: 576px) {
   .article-headline {
     font-size: 42px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -6492,6 +6500,13 @@ input::placeholder {
     gap: 20px;
     padding: 40px;
     margin-bottom: 100px;
+  }
+}
+@media (max-width: 1040px) {
+  .detail-article {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
